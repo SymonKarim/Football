@@ -1,0 +1,169 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+.image-fluid {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+header {
+  background-color: #2d25a0;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.left-div h1 {
+  font-size: 64px;
+  color: white;
+}
+.left-div {
+  margin-left: 25px;
+}
+.banner .right-div img {
+  width: 556px;
+  height: 438px;
+  align-items: center;
+}
+.banner .right-div img:hover {
+  transform: rotate(90deg) ;
+}
+.btn-class {
+  background-color: #e02c6d;
+  width: 168px;
+  height: 44px;
+  line-height: 0.1;
+}
+.btn-class a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 20px;
+  margin-top: 50px;
+}
+.card {
+  box-shadow: 150px 150px 150px 150px rgb(233, 229, 229);
+  padding: 50px;
+}
+footer {
+  margin-top: 50px;
+}
+
+.footer-design {
+  text-align: center;
+}
+.footer-design img {
+  width: 484px;
+  height: 213px;
+}
+.footer-design p span img {
+  width: 32px;
+  height: 32px;
+}
+@media (min-width: 300px) {
+  .players {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: auto;
+  }
+  .card img {
+    width: 100%;
+  }
+  .banner .right-div img {
+    width: 100%;
+    height: 80%;
+    align-items: center;
+  }
+  .left-div {
+    margin-left: 15px;
+  }
+  .right-div {
+    margin-top: 35px;
+  }
+  .left-div h1 {
+    font-size: 44px;
+  }
+  .footer-design img {
+    width: 100%;
+    height: 213px;
+  }
+}
+@media (min-width: 768px) {
+  .players {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .footer-design img {
+    width: 100%;
+    height: 213px;
+  }
+  .container {
+    width: auto;
+  }
+  .banner .right-div img {
+    width: 100%;
+    height: 80%;
+    align-items: center;
+  }
+  .left-div {
+    margin-left: 15px;
+  }
+  .right-div {
+    margin-top: 35px;
+  }
+  .left-div h1 {
+    font-size: 54px;
+  }
+}
+@media (min-width: 1280px) {
+  .players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+  }
+}
+@media (max-width: 1280px) {
+  .container {
+    width: auto;
+  }
+  .banner .right-div img {
+    width: 100%;
+    height: 80%;
+    align-items: center;
+  }
+  .left-div {
+    margin-left: 15px;
+  }
+  .right-div {
+    margin-top: 35px;
+  }
+  .left-div h1 {
+    font-size: 54px;
+  }
+}
